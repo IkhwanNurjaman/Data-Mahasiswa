@@ -1,1 +1,154 @@
+/* ==========================
+   Global Styles
+========================== */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f4f9;
+  color: #333;
+}
 
+/* ==========================
+   Navbar
+========================== */
+.navbar {
+  background-color: #4b6cb7;
+  background-image: linear-gradient(315deg, #4b6cb7 0%, #182848 74%);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  border-bottom: 1px solid #3a4f7b;
+}
+
+/* ==========================
+   Container & Grid
+========================== */
+.container {
+  width: 95%;
+  max-width: 1200px;
+  margin: 30px auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-bottom: 25px;
+}
+
+/* ==========================
+   Card
+========================== */
+.card {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+  color: #4b6cb7;
+  margin-bottom: 15px;
+}
+
+/* ==========================
+   Form Elements
+========================== */
+input, select, button {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  background-color: #f9f9f9;
+  color: #333;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+input:focus, select:focus {
+  border-color: #4b6cb7;
+  box-shadow: 0 0 5px rgba(75,108,183,0.3);
+}
+
+button {
+  background-color: #4b6cb7;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+  border: none;
+}
+
+button:hover {
+  background-color: #3a4f7b;
+  transform: translateY(-2px);
+}
+
+/* ==========================
+   Tables
+========================== */
+.neon-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: all 0.3s;
+}
+
+.neon-table th,
+.neon-table td {
+  text-align: center;
+  padding: 14px;
+  border-bottom: 1px solid #eee;
+}
+
+.neon-table th {
+  background-color: #f0f2f5;
+  color: #4b6cb7;
+  font-weight: 600;
+}
+
+.neon-table tr:hover {
+  background-color: #f9f9f9;
+}
+
+.highlight {
+  background-color: #d0e1ff !important;
+}
+
+/* ==========================
+   Export Buttons
+========================== */
+.export-buttons {
+  margin-bottom: 15px;
+}
+
+.export-buttons button {
+  margin-right: 10px;
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-weight: bold;
+  border: none;
+  background-color: #4b6cb7;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.export-buttons button:hover {
+  background-color: #3a4f7b;
+  transform: translateY(-2px);
+}
